@@ -7,6 +7,10 @@ import java.util.concurrent.TimeUnit;
 public class LinkThreadList implements Runnable {
     public ArrayList<LinkThread> linkThreads = new ArrayList<>();
 
+    public Integer getLinkThreadsSize() {
+        return linkThreads.size();
+    }
+
     public void addLinkThread(LinksObject linksObject) {
         LinkThread linkThread = new LinkThread(linksObject);
         this.linkThreads.add(linkThread);
