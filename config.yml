@@ -1,0 +1,12 @@
+logging:
+  level: INFO
+  loggers:
+    org.WikiRelations: DEBUG
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8090
+  adminConnectors:
+    - type: http
+      port: 8091
